@@ -12,10 +12,6 @@ This project is a complete migration of a legacy Vanilla JavaScript implementati
 - **Type Safety**: Built with strict TypeScript to ensure correct handling of simulation states and logic.
 - **Modern Stack**: Leverages Vite for lightning-fast builds and React for an optimal UI component structure.
 
-## Getting Started
-
-The project source code is located in the `pumping lemma` directory.
-
 ### Prerequisites
 - Node.js installed on your machine.
 
