@@ -18,9 +18,6 @@ This project is a complete migration of a legacy Vanilla JavaScript implementati
 ### Installation
 
 Navigate to the project directory:
-```bash
-cd "pumping lemma"
-```
 
 Install dependencies:
 ```bash
