@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# Pumping Lemma Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive web application to visualize and simulate the Pumping Lemma for Regular and Context-Free Languages. 
 
-Currently, two official plugins are available:
+## Overview
+This project is a complete migration of a legacy Vanilla JavaScript implementation to a modern, Vercel-ready **React + Vite + TypeScript** application. It features a robust, component-based architecture and utilizes **Framer Motion** animations to deliver a polished, cyberpunk aesthetic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- **Interactive Simulation**: Step-by-step visualization of the Pumping Lemma process to prove languages are not regular or context-free.
+- **Supported Languages**: Out-of-the-box support for multiple languages, including the Context-Free Language `L = {w | #0 = #1 = #2}`.
+- **Cyberpunk Aesthetic**: Modern user interface with vibrant colors, dark background, and smooth micro-animations.
+- **Type Safety**: Built with strict TypeScript to ensure correct handling of simulation states and logic.
+- **Modern Stack**: Leverages Vite for lightning-fast builds and React for an optimal UI component structure.
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project source code is located in the `pumping lemma` directory.
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js installed on your machine.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Navigate to the project directory:
+```bash
+cd "pumping lemma"
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install dependencies:
+```bash
+npm install
 ```
+
+### Running Locally
+To start the development server, run:
+```bash
+npm run dev
+```
+
+### Build for Production
+To build the application for deployment (e.g., to Vercel):
+```bash
+npm run build
+```
+
+## Technologies Used
+- React
+- TypeScript
+- Vite
+- Framer Motion
+- CSS
